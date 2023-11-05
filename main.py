@@ -76,8 +76,6 @@ def we_dont_know(m):
     return
 
 
-bot.polling(none_stop=True)
-
 while True:
     try:
         bot.polling(none_stop=True)
