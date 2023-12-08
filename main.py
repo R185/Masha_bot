@@ -76,7 +76,7 @@ def we_dont_know(m):
     return
 
 
-from flask import Flask
+import Flask
 
 app = Flask(__name__)
 
