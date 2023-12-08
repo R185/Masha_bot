@@ -76,8 +76,18 @@ def we_dont_know(m):
     return
 
 
-while True:
-    try:
-        bot.polling(none_stop=True)
-    except Exception as e:
-        print(str(e))
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return 'Masha_han_bot'
+
+if __name__ == '__main__':
+    app.run()
+    while True:
+        try:
+            bot.polling(none_stop=True)
+        except Exception as e:
+            print(str(e))
